@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "css": "lessc css/style.less css/style.css --autoprefix css/style.css",
+    "js": "uglifyjs -o js/jquery.1rosehip-mega-menu.min.js js/jquery.1rosehip-mega-menu.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
