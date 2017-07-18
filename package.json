@@ -1,0 +1,20 @@
+{
+  "name": "responsive-mega-menu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css": "lessc css/style.less css/style.css --autoprefix css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1rosehip/responsive-mega-menu.git"
+  },
+  "author": "1rosehip",
+  "keywords": ["jquery-plugin"],
+  "bugs": {
+    "url": "https://github.com/1rosehip/responsive-mega-menu/issues"
+  },
+  "homepage": "https://github.com/1rosehip/responsive-mega-menu#readme"
+}
