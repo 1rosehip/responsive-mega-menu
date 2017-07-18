@@ -15,9 +15,26 @@
         <header>
 
             <!-- MEGAMENU EXAMPLE START -->
-            <ul>
+            <ul class="rhip-mega-menu">
                 <li>
                     <a href="#">Home</a>
+                    <div class="rhip-mega-menu-content">
+                        Test 1
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">Products</a>
+                    <div class="rhip-mega-menu-content">
+                        Test 2
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#">Articles</a>
+                    <div class="rhip-mega-menu-content">
+                        Test 3
+                    </div>
                 </li>
             </ul>
             <!-- MEGAMENU EXAMPLE END -->
@@ -37,7 +54,10 @@
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 
-        <!-- custom js -->
+        <!-- 1rosehip mega menu plugin -->
         <script src="js/jquery.1rosehip-mega-menu.js"></script>
+        <script>
+            $('.rhip-mega-menu').rhipMegaMenu();
+        </script>
     </body>
 </html>

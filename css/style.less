@@ -1,4 +1,82 @@
 html, body{
   padding: 0;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
 }
+
+/**
+ * demo pages styles
+ */
+.demo-page-mixin(){
+  header{
+    margin: 20px 0;
+  }
+}
+
+/**
+ * rosehip mega menu styles
+ */
+.rhip-mega-menu-mixin(){
+
+  //mega menu basic styles
+  .rhip-mega-menu{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background: #fff;
+    color: #111;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+
+    li{
+      position: relative;
+      margin: 0 3px;
+
+      >a {
+        color: #efefef;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 15px;
+        background: #4f4f4f;
+        transition: all 0.5s ease;
+      }
+
+      >a:hover{
+        background: #256c83;
+      }
+    }
+
+    .rhip-mm-selected{
+      color: red;
+    }
+  }
+
+  //mega menu content styles
+  .rhip-mega-menu-content{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background: #111;
+    color: #efefef;
+  }
+
+  .rhip-mm-selected + .rhip-mega-menu-content{
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.demo-page-mixin();
+.rhip-mega-menu-mixin();
