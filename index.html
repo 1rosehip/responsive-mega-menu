@@ -7,6 +7,12 @@
         <meta http-equiv="X-UA-Compatible"a content="IE=edge,chrome=1" />
         <meta name="viewport" content="width=device-width" />
 
+        <!-- google font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css" />
+
+        <!-- fonts library -->
+        <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' />
+
         <!-- custom style -->
         <link rel="stylesheet" href="css/style.css" >
     </head>
@@ -14,41 +20,68 @@
         <!-- header -->
         <header>
 
-            <!-- MEGAMENU EXAMPLE START -->
-            <ul class="rhip-mega-menu">
-                <li>
-                    <a href="#">Home</a>
-                    <div class="rhip-mega-menu-content">
-                        Test 1
-                    </div>
-                </li>
+            <div class="top">
 
-                <li>
-                    <a href="#">Products</a>
-                    <div class="rhip-mega-menu-content">
-                        Test 2
-                    </div>
-                </li>
+            </div>
 
-                <li>
-                    <a href="#">Articles</a>
-                    <div class="rhip-mega-menu-content">
-                        Test 3
-                    </div>
-                </li>
-            </ul>
-            <!-- MEGAMENU EXAMPLE END -->
+            <nav>
+
+                <!-- MEGAMENU EXAMPLE START -->
+                <ul class="rhip-mega-menu">
+                    <li>
+                        <a href="#">Home</a>
+                        <div class="rhip-mega-menu-content">
+                            Test 1
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">Products</a>
+                        <div class="rhip-mega-menu-content">
+                            Test 2
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">Articles</a>
+                        <div class="rhip-mega-menu-content">
+                            Test 3
+                        </div>
+                    </li>
+                </ul>
+                <!-- MEGAMENU EXAMPLE END -->
+
+            </nav>
 
         </header>
 
         <!-- page content -->
         <div class="page">
+            <h1>1Rosehip Responsive Mega Menu</h1>
 
+            <p><strong>1Rosehip Responsive Mega Menu</strong> is a fully responsive mega menu with all the elements reorganized to fit into any screen. Based on a custom grid, this menu allows you to organize your content into columns (from 1 up to 12) with a lot of typography examples such as headings, lists, images styling, tables, form elements, etc.</p>
+
+            <ul class="grid">
+                <li>
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <span class="grid-item-desc">Completely Responsive</span>
+                </li>
+                <li>
+                    <i class="fa fa-html5" aria-hidden="true"></i>
+                    <span class="grid-item-desc">Valid XHTML5 Markup</span>
+                </li>
+                <li>
+                    <i class="fa fa-chrome" aria-hidden="true"></i>
+                    <span class="grid-item-desc">Cross Browser Support</span>
+                </li>
+            </ul>
         </div>
 
         <!-- footer -->
         <footer>
-
+            1rosehip &copy;
+            <span id="year"></span>
+            <script>document.getElementById('year').innerHTML = new Date().getFullYear();</script>
         </footer>
 
         <!-- jQuery -->
@@ -56,7 +89,9 @@
 
         <!-- 1rosehip mega menu plugin -->
         <script src="js/jquery.1rosehip-mega-menu.js"></script>
+
         <script>
+            //start 1rosehip mega menu
             $('.rhip-mega-menu').rhipMegaMenu();
         </script>
     </body>

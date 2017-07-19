@@ -1,30 +1,99 @@
 html, body{
   padding: 0;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  background: radial-gradient(center, #6076dc, #143946);
+  color: #efefef;
+
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-flow: column;
 }
 
-/**
- * demo pages styles
- */
 .demo-page-mixin(){
+
+  /* demo page styles */
   header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+  }
+
+  nav{
     margin: 20px 0;
+  }
+
+  .top{
+    min-height: 50px;
+    background: #111;
+  }
+
+  .page{
+    min-height: 500px;
+    max-width: 1200px;
+    padding-top: 130px;
+  }
+
+  h1{
+    text-align: center;
+    font-weight: 300;
+    font-size: 27px;
+  }
+
+  strong{
+    font-weight: 400;
+  }
+
+  .grid{
+    display: flex;
+    width: 100%;
+    margin: 40px 0;
+    padding: 0;
+
+    li{
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      width: 31%;
+      margin: 0 1% 15px 1%;
+      padding: 15px 0;
+      text-align: center;
+      border-radius: 2px;
+      transition: all 0.5s ease;
+    }
+
+    .fa{
+      font-size: 40px;
+      margin: 0 0 15px 0;
+    }
+
+    li:hover{
+      background: rgba(50, 50, 50, 0.7);
+    }
+  }
+
+  footer{
+    min-height: 100px;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    width: 100%;
   }
 }
 
-/**
- * rosehip mega menu styles
- */
 .rhip-mega-menu-mixin(){
 
-  //mega menu basic styles
+  /* mega menu basic styles */
   .rhip-mega-menu{
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
     color: #111;
 
     list-style: none;
@@ -58,7 +127,7 @@ html, body{
     }
   }
 
-  //mega menu content styles
+  /* mega menu content styles */
   .rhip-mega-menu-content{
     visibility: hidden;
     opacity: 0;
