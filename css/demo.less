@@ -1,0 +1,154 @@
+.demo-page-common(){
+
+  /* demo page styles */
+  html, body{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", helvetica, arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background: radial-gradient(center, #6076dc, #143946);
+    color: #efefef;
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+  }
+
+  nav{
+    margin: 20px 0;
+  }
+
+  .top{
+    min-height: 50px;
+    background: #111;
+  }
+
+  footer{
+    min-height: 100px;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+  }
+
+}
+
+.demo-page-intro(){
+
+  /* demo page styles : intro */
+  .intro{
+    background: #111 url('../img/intro.jpg') no-repeat 50% 50%;
+    background-size: cover;
+
+    min-height: 350px;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .btn{
+      background: rgba(255, 255, 255, 0.85);
+      color: #777;
+      border-radius: 5px;
+      display: inline-block;
+      text-decoration: none;
+      padding: 7px 15px;
+      transition: all 0.5s ease;
+      margin: 5px;
+    }
+
+    .btn:hover{
+      background: rgba(255, 255, 255, 1);
+    }
+  }
+
+  .photo-credit{
+    font-size: 11px;
+    color: #eee;
+    text-decoration: none;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+
+}
+
+.demo-page-description(){
+
+  /* demo page styles : description */
+  .description{
+    min-height: 500px;
+    max-width: 1200px;
+  }
+
+  h1{
+    text-align: center;
+    font-weight: 300;
+    font-size: 27px;
+  }
+
+  h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 22px;
+  }
+
+  strong{
+    font-weight: 400;
+  }
+
+  .grid {
+    display: flex;
+    width: 100%;
+    margin: 40px 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      width: 31%;
+      margin: 0 1% 15px 1%;
+      padding: 15px 0;
+      text-align: center;
+      border-radius: 2px;
+      transition: all 0.5s ease;
+    }
+
+    .fa {
+      font-size: 40px;
+      margin: 0 0 15px 0;
+    }
+
+    li:hover {
+      background: rgba(50, 50, 50, 0.7);
+    }
+  }
+}
+
+.demo-page-docs(){
+
+  .docs{
+    min-height: 300px;
+    width: 100%;
+    background: #fff;
+    color: #111;
+  }
+}
+
+.demo-page-common();
+.demo-page-intro();
+.demo-page-description();
+.demo-page-docs();

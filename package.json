@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "css": "lessc css/style.less css/style.css --autoprefix css/style.css",
+    "css": "lessc css/jquery.1rosehip-mega-menu.less css/jquery.1rosehip-mega-menu.css --autoprefix css/jquery.1rosehip-mega-menu.css",
+    "cssdemo": "lessc css/demo.less css/demo.css --autoprefix css/demo.css",
     "js": "uglifyjs -o js/jquery.1rosehip-mega-menu.min.js js/jquery.1rosehip-mega-menu.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

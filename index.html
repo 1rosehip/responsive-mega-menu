@@ -13,8 +13,12 @@
         <!-- fonts library -->
         <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' />
 
-        <!-- custom style -->
-        <link rel="stylesheet" href="css/style.css" >
+        <!-- demo page styles -->
+        <link rel="stylesheet" href="highlight/highlight.default.min.css" />
+        <link rel="stylesheet" href="css/demo.css" >
+
+        <!-- 1rosehip mega menu styles -->
+        <link rel="stylesheet" href="css/jquery.1rosehip-mega-menu.css" >
     </head>
     <body>
         <!-- header -->
@@ -55,8 +59,17 @@
 
         </header>
 
-        <!-- page content -->
-        <div class="page">
+        <!-- intro -->
+        <section class="intro">
+            <a href="https://github.com/1rosehip/responsive-mega-menu/archive/master.zip" class="btn" title=""><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+            <a href="#" class="btn" id="docs-btn" title=""><i class="fa fa-file" aria-hidden="true"></i> Get Started</a>
+
+            <a class="photo-credit" href="http://unsplash.com/@albertorestifo?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" title="" target="_blank" rel="noopener noreferrer" title="Photo Credit">Photo by Alberto Restifo on Unsplash</a>
+        </section>
+
+        <!-- description -->
+        <section class="description">
+
             <h1>1Rosehip Responsive Mega Menu</h1>
 
             <p><strong>1Rosehip Responsive Mega Menu</strong> is a fully responsive mega menu with all the elements reorganized to fit into any screen. Based on a custom grid, this menu allows you to organize your content into columns (from 1 up to 12) with a lot of typography examples such as headings, lists, images styling, tables, form elements, etc.</p>
@@ -75,13 +88,21 @@
                     <span class="grid-item-desc">Cross Browser Support</span>
                 </li>
             </ul>
-        </div>
+        </section>
+
+        <!-- documentation -->
+        <section class="docs" id="docs">
+
+            <h2>Get Started</h2>
+
+            <pre><code class="html">&lt;ul class="rhip-mega-menu">&lt;/ul></code></pre>
+
+        </section>
 
         <!-- footer -->
         <footer>
             1rosehip &copy;
             <span id="year"></span>
-            <script>document.getElementById('year').innerHTML = new Date().getFullYear();</script>
         </footer>
 
         <!-- jQuery -->
@@ -94,5 +115,9 @@
             //start 1rosehip mega menu
             $('.rhip-mega-menu').rhipMegaMenu();
         </script>
+
+        <!-- demo page scripts -->
+        <script src="highlight/highlight.pack.js"></script>
+        <script src="js/demo.js"></script>
     </body>
 </html>
