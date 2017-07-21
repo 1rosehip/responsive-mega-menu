@@ -31,14 +31,7 @@ nav {
 }
 .top {
   min-height: 50px;
-  background: #111;
-}
-footer {
-  min-height: 100px;
-  background: #111;
-  color: #fff;
-  text-align: center;
-  width: 100%;
+  background: #2F2F2F;
 }
 /* demo page styles : intro */
 .intro {
@@ -142,4 +135,58 @@ strong {
   width: 100%;
   background: #fff;
   color: #111;
+}
+/* footer */
+footer {
+  padding: 20px 0;
+  background: #2F2F2F;
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+  width: 100%;
+}
+/* footer social menu */
+.footer-social-menu {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer-social-menu li {
+  width: 28px;
+  border-radius: 3px;
+  margin: 0 10px 0 0;
+  padding: 3px;
+  text-align: center;
+  color: #111;
+}
+.footer-social-menu a {
+  color: #3b3b3b;
+}
+.footer-social-menu a:hover {
+  color: #000;
+}
+.footer-social-menu li:first-child {
+  width: auto;
+  color: #eee;
+}
+.footer-social-menu li:nth-child(2) {
+  background-color: #35c97f;
+}
+.footer-social-menu li:nth-child(3) {
+  background-color: #ffbb00;
+}
+.footer-social-menu li:nth-child(4) {
+  background-color: #06afb8;
+}
+.footer-social-menu li:nth-child(5) {
+  background-color: #9f7bb8;
+}
+.footer-social-menu li:nth-child(6) {
+  background-color: #e63a29;
 }
