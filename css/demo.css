@@ -176,10 +176,10 @@ footer {
   color: #eee;
 }
 .footer-social-menu li:nth-child(2) {
-  background-color: #35c97f;
+  background-color: #e63a29;
 }
 .footer-social-menu li:nth-child(3) {
-  background-color: #ffbb00;
+  background-color: #35c97f;
 }
 .footer-social-menu li:nth-child(4) {
   background-color: #06afb8;
@@ -188,5 +188,5 @@ footer {
   background-color: #9f7bb8;
 }
 .footer-social-menu li:nth-child(6) {
-  background-color: #e63a29;
+  background-color: #ffbb00;
 }
